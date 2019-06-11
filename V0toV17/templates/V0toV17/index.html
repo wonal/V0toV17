@@ -1,10 +1,19 @@
 {% load static %}
 
 <!DOCTYPE html>
-<head></head>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'V0toV17/style.css' %}">
+</head>
 <body>
     <h1>My Climbing Entries</h1>
-    <ul id="entries">
-    </ul>
+    <table id="entries">
+        <tr>
+            <th>Session Date</th>
+            <th>Boulder Grade</th>
+            <th># Successful Sends</th>
+            <th># Attempts</th>
+            <th>Notes</th>
+        </tr>
+    </table>
     <script type="text/javascript" src="{% static 'V0toV17/site.js' %}"></script>
 </body>
